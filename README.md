@@ -1,1 +1,1 @@
-#FreeCodeCamp World Cup Database Project
+FreeCodeCamp World Cup Database Project
