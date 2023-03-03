@@ -25,7 +25,7 @@ do
       INSERT_WINNER_TEAM_ID=$($PSQL "INSERT INTO teams(name) VALUES('$WINNER')")
       if [[ $INSERT_WINNER_TEAM_ID == "INSERT 0 1" ]]
       then
-        echo Inserted winner $WINNER into teams.
+        echo Inserted $WINNER into teams.
       fi
 
       # Get new winner_team_id
@@ -39,7 +39,7 @@ do
       INSERT_OPPONENT_TEAM_ID=$($PSQL "INSERT INTO teams(name) VALUES('$OPPONENT')")
       if [[ $INSERT_OPPONENT_TEAM_ID == "INSERT 0 1" ]]
       then
-        echo Inserted opponent $OPPONENT into teams.
+        echo Inserted $OPPONENT into teams.
       fi
 
       # Get new opponent_team_id
